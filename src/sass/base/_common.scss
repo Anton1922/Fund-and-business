@@ -31,7 +31,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.2;
+  line-height: 1.22;
   font-style: normal;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
@@ -48,7 +48,7 @@ button:focus {
   outline: none;
 }
 a {
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
 }
 a, a:hover {
   text-decoration: none;
@@ -64,47 +64,48 @@ input[type=number] {
   -moz-appearance:textfield;
 }
 
-.cruelty-block {
+.business-block {
   margin: 0 auto;
-  padding: 120px 140px 135px;
-  max-width: 1440px;
+  max-width: 1200px;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
-}
-
-@media screen and (max-width: 1025px) {
-  .cruelty-block:not(.cruelty-header):not(.cruelty-rectangles):not(.cruelty-ways) {
-    padding: 60px 10px 70px;
-  }
 }
 
 .cruelty-title-h3 {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
-
-  @media screen and (max-width: 1025px) {
-    font-size: 26px;
-  }
-
-  @media screen and (max-width: 800px) {
-    font-size: 24px;
-  }
-
-  @media screen and (max-width: 500px) {
-    text-align: center;
-    font-size: 20px;
-  }
 }
 
-.cruelty-description {
+.business__description {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.2;
+  text-align: center;
+}
 
-  @media screen and (max-width: 500px) {
-    text-align: center;
-    font-size: 18px;
+.business__button {
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: #111111;
+  background-color: #41e7c9;
+
+  &:hover {
+    background-color: #349481;
+    color: #edeaea;
+  }
+
+  &--small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 386px;
+    height: 85px;
   }
 }
 
