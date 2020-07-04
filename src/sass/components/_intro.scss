@@ -1,0 +1,22 @@
+.business-intro {
+	position: relative;
+	padding: 230px 162px 150px;
+	width: 100%;
+	background-image: url('images/intro-image-min.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__title {
+		margin: 0 auto 20px;
+		max-width: 1080px;
+		font-size: 72px;
+		text-align: center;
+		color: #edeaea;
+	}
+
+	&__description {
+		margin: 0 auto 150px;
+		max-width: 887px;
+		color: #edeaea;
+	}
+}
