@@ -1,0 +1,62 @@
+.business-reasons {
+	margin-bottom: 167px;
+	
+	&__title {
+		margin-bottom: 40px;
+		max-width: 555px;
+	}
+
+	&__description {
+		margin-bottom: 70px;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 61px;
+	}
+
+	&__card {
+		position: relative;
+		margin-bottom: 30px;
+		padding-bottom: 50px;
+		width: 30%;
+		max-width: 386px;
+		border: 1px solid #41e7c9;
+
+		&:not(:first-child) {
+			margin-left: 20px;
+		}
+	}
+
+	&__container-image {
+		margin: 60px auto 46px;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__subtitle {
+		margin: 0 auto 25px;
+		max-width: 308px;
+	}
+
+	&__text {
+		margin-left: 50px;
+		max-width: 325px;
+	}
+
+	&__number {
+		position: absolute;
+		left: 30px;
+		top: 12px;
+		font-weight: 700;
+		font-size: 72px;
+		line-height: 88px;
+		color: rgba(65, 231, 201, 0.2);
+	}
+
+	&__button {
+
+	}
+}
