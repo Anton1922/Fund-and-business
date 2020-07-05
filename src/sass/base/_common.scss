@@ -64,24 +64,29 @@ input[type=number] {
   -moz-appearance:textfield;
 }
 
-.business-block {
-  margin: 0 auto;
+.business__block {
+  margin: 0 auto 170px;
   max-width: 1200px;
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.2;
 }
 
-.cruelty-title-h3 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1.2;
+.business__title-h3 {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 50px;
+  text-align: center;
 }
 
 .business__description {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
   text-align: center;
+}
+
+.business__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .business__button {
@@ -96,7 +101,7 @@ input[type=number] {
   background-color: #41e7c9;
 
   &:hover {
-    background-color: #349481;
+    background-color: #3bbca4;
     color: #edeaea;
   }
 
@@ -106,6 +111,15 @@ input[type=number] {
     justify-content: center;
     width: 386px;
     height: 85px;
+  }
+
+  &--big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 558px;
+    height: 96px;
+    text-transform: none;
   }
 }
 
