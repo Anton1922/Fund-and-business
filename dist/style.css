@@ -461,24 +461,29 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.business-block {
-  margin: 0 auto;
+.business__block {
+  margin: 0 auto 170px;
   max-width: 1200px;
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.2;
 }
 
-.cruelty-title-h3 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1.2;
+.business__title-h3 {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 50px;
+  text-align: center;
 }
 
 .business__description {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
   text-align: center;
+}
+
+.business__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .business__button {
@@ -494,7 +499,7 @@ input[type=number] {
 }
 
 .business__button:hover {
-  background-color: #349481;
+  background-color: #3bbca4;
   color: #edeaea;
 }
 
@@ -512,8 +517,24 @@ input[type=number] {
   height: 85px;
 }
 
+.business__button--big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 558px;
+  height: 96px;
+  text-transform: none;
+}
+
 .business-intro {
   position: relative;
+  margin-bottom: 90px;
   padding: 230px 162px 150px;
   width: 100%;
   background-image: url("images/intro-image-min.jpg");
@@ -533,4 +554,141 @@ input[type=number] {
   margin: 0 auto 150px;
   max-width: 887px;
   color: #edeaea;
+}
+
+.business-format__title {
+  margin-bottom: 30px;
+}
+
+.business-format__description {
+  margin-bottom: 60px;
+}
+
+.business-format__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.business-format__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  max-width: 386px;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.business-format__content {
+  padding: 37px 22px 27px;
+}
+
+.business-format__subtitle {
+  margin-bottom: 20px;
+}
+
+.business-format__button {
+  margin: auto auto 27px 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 180px;
+  height: 65px;
+  border: 3px solid #41e7c9;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.business-format__button:hover {
+  background-color: #41e7c9;
+}
+
+.business-reasons {
+  margin-bottom: 167px;
+}
+
+.business-reasons__title {
+  margin-bottom: 40px;
+  max-width: 555px;
+}
+
+.business-reasons__description {
+  margin-bottom: 70px;
+}
+
+.business-reasons__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 61px;
+}
+
+.business-reasons__card {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+  width: 30%;
+  max-width: 386px;
+  border: 1px solid #41e7c9;
+}
+
+.business-reasons__card:not(:first-child) {
+  margin-left: 20px;
+}
+
+.business-reasons__container-image {
+  margin: 60px auto 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.business-reasons__subtitle {
+  margin: 0 auto 25px;
+  max-width: 308px;
+}
+
+.business-reasons__text {
+  margin-left: 50px;
+  max-width: 325px;
+}
+
+.business-reasons__number {
+  position: absolute;
+  left: 30px;
+  top: 12px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 88px;
+  color: rgba(65, 231, 201, 0.2);
 }
