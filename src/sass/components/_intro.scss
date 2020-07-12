@@ -1,11 +1,21 @@
 .business-intro {
 	position: relative;
 	margin-bottom: 90px;
-	padding: 230px 162px 150px;
+	padding: 230px 160px 150px;
 	width: 100%;
 	background-image: url('images/intro-image-min.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	@media screen and (max-width: 1025px) {
+    margin-bottom: 60px;
+		padding: 150px 15px 100px;
+  }
+
+	@media screen and (max-width: 800px) {
+		margin-bottom: 45px;
+		padding: 115px 15px 75px;
+	}
 
 	&__title {
 		margin: 0 auto 20px;
@@ -13,11 +23,27 @@
 		font-size: 72px;
 		text-align: center;
 		color: #edeaea;
+
+		@media screen and (max-width: 1025px) {
+			font-size: 60px;
+		}
+
+		@media screen and (max-width: 800px) {
+			font-size: 48px;
+		}
 	}
 
 	&__description {
 		margin: 0 auto 150px;
 		max-width: 887px;
 		color: #edeaea;
+
+		@media screen and (max-width: 1025px) {
+			margin-bottom: 100px;
+		}
+
+		@media screen and (max-width: 800px) {
+			margin-bottom: 75px;
+		}
 	}
 }

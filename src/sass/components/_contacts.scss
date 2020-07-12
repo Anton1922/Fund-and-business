@@ -1,5 +1,8 @@
 .business-contacts {
-	margin-bottom: 105px;
+
+	@media screen and (max-width: 800px) {
+		padding: 0 15px;
+	}
 
 	&__title {
 		margin-bottom: 45px;
@@ -38,5 +41,10 @@
 		&:hover {
 			color: #83efdc;
 		}
+
+		@media screen and (max-width: 800px) {
+			font-size: 20px;
+		}
+
 	}
 }

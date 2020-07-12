@@ -1,5 +1,4 @@
 .business-reasons {
-	margin-bottom: 167px;
 	
 	&__title {
 		margin-bottom: 40px;
@@ -14,7 +13,11 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		margin-bottom: 61px;
+		margin-bottom: 60px;
+
+		@media screen and (max-width: 800px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__card {
@@ -27,6 +30,20 @@
 
 		&:not(:first-child) {
 			margin-left: 20px;
+
+			@media screen and (max-width: 800px) {
+				margin-left: 0;
+			}
+		}
+
+		&:nth-of-type(even) {
+			@media screen and (max-width: 800px) {
+				margin-left: 20px;
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+			width: 45%;
 		}
 	}
 

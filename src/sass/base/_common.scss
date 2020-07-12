@@ -65,9 +65,17 @@ input[type=number] {
 }
 
 .business__block {
-  margin: 0 auto 170px;
+  margin: 0 auto 165px;
   max-width: 1200px;
   font-family: 'Montserrat', sans-serif;
+
+  @media screen and (max-width: 1025px) {
+    margin-bottom: 110px;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 80px;
+  }
 }
 
 .business__title-h3 {
@@ -75,12 +83,20 @@ input[type=number] {
   font-weight: 500;
   font-size: 50px;
   text-align: center;
+
+  @media screen and (max-width: 800px) {
+    font-size: 34px;
+  }
 }
 
 .business__description {
   font-weight: 500;
   font-size: 20px;
   text-align: center;
+
+  @media screen and (max-width: 800px) {
+    font-size: 18px;
+  }
 }
 
 .business__text {
@@ -90,6 +106,9 @@ input[type=number] {
 }
 
 .business__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   font-family: 'Montserrat';
   font-style: normal;
@@ -97,8 +116,15 @@ input[type=number] {
   font-size: 18px;
   line-height: 1.22;
   text-transform: uppercase;
+  text-align: center;
   color: #111111;
   background-color: #41e7c9;
+
+  @media screen and (max-width: 800px) {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+  }
 
   &:hover {
     background-color: #3bbca4;
@@ -106,20 +132,22 @@ input[type=number] {
   }
 
   &--small {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 386px;
     height: 85px;
+
+    @media screen and (max-width: 800px) {
+      width: 300px;
+    }
   }
 
   &--big {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 558px;
     height: 96px;
     text-transform: none;
+
+    @media screen and (max-width: 800px) {
+      width: 310px;
+    }
   }
 }
 

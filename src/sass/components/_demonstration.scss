@@ -1,17 +1,28 @@
 .business-demonstration {
-	margin-bottom: 167px;
 
 	&__title {
 		margin-bottom: 45px;
+
+		@media screen and (max-width: 800px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__description {
 		margin-bottom: 65px;
+
+		@media screen and (max-width: 800px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__container-outer {
 		display: flex;
 		margin-bottom: 75px;
+
+		@media screen and (max-width: 800px) {
+			margin-bottom: 35px;
+		}
 	}
 
 	&__container-inner {
@@ -65,9 +76,13 @@
 			max-width: 370px;
 			font-weight: 500;
 			font-size: 36px;
-			line-height: 44px;
 			text-align: center;
 			color: #fff;
+
+			@media screen and (max-width: 800px) {
+				max-width: 200px;
+				font-size: 24px;
+			}
 		}
 		
 		&:hover &-filter {

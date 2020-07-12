@@ -2,6 +2,10 @@
 	padding: 60px 60px 90px;
 	border: 1px solid #41e7c9;
 
+	@media screen and (max-width: 800px) {
+		padding: 30px 30px 45px;
+	}
+
 	&__title {
 		margin: 0 auto 90px;
 		max-width: 740px;
