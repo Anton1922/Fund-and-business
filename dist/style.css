@@ -462,7 +462,7 @@ input[type=number] {
 }
 
 .business__block {
-  margin: 0 auto 170px;
+  margin: 0 auto 165px;
   max-width: 1200px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -487,6 +487,15 @@ input[type=number] {
 }
 
 .business__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 auto;
   font-family: 'Montserrat';
   font-style: normal;
@@ -494,6 +503,7 @@ input[type=number] {
   font-size: 18px;
   line-height: 1.22;
   text-transform: uppercase;
+  text-align: center;
   color: #111111;
   background-color: #41e7c9;
 }
@@ -504,29 +514,11 @@ input[type=number] {
 }
 
 .business__button--small {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   width: 386px;
   height: 85px;
 }
 
 .business__button--big {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 558px;
   height: 96px;
   text-transform: none;
@@ -535,7 +527,7 @@ input[type=number] {
 .business-intro {
   position: relative;
   margin-bottom: 90px;
-  padding: 230px 162px 150px;
+  padding: 230px 160px 150px;
   width: 100%;
   background-image: url("images/intro-image-min.jpg");
   background-repeat: no-repeat;
@@ -626,10 +618,6 @@ input[type=number] {
   background-color: #41e7c9;
 }
 
-.business-reasons {
-  margin-bottom: 167px;
-}
-
 .business-reasons__title {
   margin-bottom: 40px;
   max-width: 555px;
@@ -648,7 +636,7 @@ input[type=number] {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 61px;
+  margin-bottom: 60px;
 }
 
 .business-reasons__card {
@@ -692,10 +680,6 @@ input[type=number] {
   font-size: 72px;
   line-height: 88px;
   color: rgba(65, 231, 201, 0.2);
-}
-
-.business-demonstration {
-  margin-bottom: 167px;
 }
 
 .business-demonstration__title {
@@ -780,17 +764,12 @@ input[type=number] {
   max-width: 370px;
   font-weight: 500;
   font-size: 36px;
-  line-height: 44px;
   text-align: center;
   color: #fff;
 }
 
 .business-demonstration__link:hover .business-demonstration__link-filter {
   opacity: 1;
-}
-
-.business-contacts {
-  margin-bottom: 105px;
 }
 
 .business-contacts__title {
@@ -854,4 +833,140 @@ input[type=number] {
   font-size: 30px;
   line-height: 41px;
   text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+  .business__block {
+    margin-bottom: 110px;
+  }
+
+  .business-intro {
+    margin-bottom: 60px;
+    padding: 150px 15px 100px;
+  }
+
+  .business-intro__title {
+    font-size: 60px;
+  }
+
+  .business-intro__description {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .business__block {
+    margin-bottom: 80px;
+  }
+
+  .business__title-h3 {
+    font-size: 34px;
+  }
+
+  .business__description {
+    font-size: 18px;
+  }
+
+  .business__button {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .business__button--small {
+    width: 300px;
+  }
+
+  .business__button--big {
+    width: 310px;
+  }
+
+  .business-intro {
+    margin-bottom: 45px;
+    padding: 115px 15px 75px;
+  }
+
+  .business-intro__title {
+    font-size: 48px;
+  }
+
+  .business-intro__description {
+    margin-bottom: 75px;
+  }
+
+  .business-format__title {
+    margin-bottom: 15px;
+  }
+
+  .business-format__description {
+    margin-bottom: 30px;
+  }
+
+  .business-format__container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .business-format__card {
+    margin-bottom: 15px;
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .business-format__image {
+    margin: 10px auto 0;
+  }
+
+  .business-format__button {
+    margin: auto auto 20px;
+  }
+
+  .business-reasons__container {
+    margin-bottom: 30px;
+  }
+
+  .business-reasons__card:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .business-reasons__card:nth-of-type(even) {
+    margin-left: 20px;
+  }
+
+  .business-reasons__card {
+    width: 45%;
+  }
+
+  .business-demonstration__title {
+    margin-bottom: 20px;
+  }
+
+  .business-demonstration__description {
+    margin-bottom: 30px;
+  }
+
+  .business-demonstration__container-outer {
+    margin-bottom: 35px;
+  }
+
+  .business-demonstration__link-title {
+    max-width: 200px;
+    font-size: 24px;
+  }
+
+  .business-contacts {
+    padding: 0 15px;
+  }
+
+  .business-contacts__link {
+    font-size: 20px;
+  }
+
+  .business-subscribe {
+    padding: 30px 30px 45px;
+  }
 }
