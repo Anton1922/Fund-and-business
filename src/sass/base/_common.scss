@@ -68,6 +68,7 @@ input[type=number] {
   margin: 0 auto 165px;
   max-width: 1200px;
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.22;
 
   @media screen and (max-width: 1025px) {
     margin-bottom: 110px;
@@ -75,6 +76,10 @@ input[type=number] {
 
   @media screen and (max-width: 800px) {
     margin-bottom: 80px;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 40px;
   }
 }
 
@@ -87,6 +92,14 @@ input[type=number] {
   @media screen and (max-width: 800px) {
     font-size: 34px;
   }
+  @media screen and (max-width: 500px) {
+    max-width: 90%;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 22px;
+  }
 }
 
 .business__description {
@@ -97,12 +110,20 @@ input[type=number] {
   @media screen and (max-width: 800px) {
     font-size: 18px;
   }
+
+  @media screen and (max-width: 500px) {
+    max-width: 90%;
+    font-size: 16px;
+  }
 }
 
 .business__text {
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
 }
 
 .business__button {
@@ -138,6 +159,11 @@ input[type=number] {
     @media screen and (max-width: 800px) {
       width: 300px;
     }
+
+    @media screen and (max-width: 360px) {
+      width: 250px;
+      height: 65px;
+    }
   }
 
   &--big {
@@ -147,6 +173,11 @@ input[type=number] {
 
     @media screen and (max-width: 800px) {
       width: 310px;
+    }
+
+    @media screen and (max-width: 360px) {
+      width: 270px;
+      height: 65px;
     }
   }
 }
