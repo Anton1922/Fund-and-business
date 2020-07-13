@@ -465,6 +465,7 @@ input[type=number] {
   margin: 0 auto 165px;
   max-width: 1200px;
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.22;
 }
 
 .business__title-h3 {
@@ -483,7 +484,6 @@ input[type=number] {
 .business__text {
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
 }
 
 .business__button {
@@ -532,6 +532,7 @@ input[type=number] {
   background-image: url("images/intro-image-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  line-height: 1.22;
 }
 
 .business-intro__title {
@@ -796,6 +797,10 @@ input[type=number] {
   max-width: 295px;
 }
 
+.business-contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .business-contacts__container-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -831,7 +836,6 @@ input[type=number] {
   max-width: 740px;
   font-weight: normal;
   font-size: 30px;
-  line-height: 41px;
   text-align: center;
 }
 
@@ -857,6 +861,10 @@ input[type=number] {
 @media screen and (max-width: 800px) {
   .business__block {
     margin-bottom: 80px;
+  }
+
+  .business__block {
+    margin-bottom: 40px;
   }
 
   .business__title-h3 {
@@ -908,7 +916,6 @@ input[type=number] {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 100%;
   }
 
   .business-format__card {
@@ -962,11 +969,155 @@ input[type=number] {
     padding: 0 15px;
   }
 
+  .business-contacts__description {
+    margin-bottom: 50px;
+  }
+
   .business-contacts__link {
     font-size: 20px;
   }
 
   .business-subscribe {
     padding: 30px 30px 45px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .business__title-h3 {
+    max-width: 90%;
+    font-size: 25px;
+  }
+
+  .business__description {
+    max-width: 90%;
+    font-size: 16px;
+  }
+
+  .business__text {
+    font-size: 16px;
+  }
+
+  .business-intro {
+    margin-bottom: 25px;
+    padding: 50px 10px 35px;
+  }
+
+  .business-intro__title {
+    font-size: 36px;
+  }
+
+  .business-intro__description {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .business-format__card {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .business-format__content {
+    padding: 20px 10px 20px;
+    text-align: center;
+  }
+
+  .business-reasons__title {
+    margin-bottom: 20px;
+  }
+
+  .business-reasons__description {
+    margin-bottom: 35px;
+    max-width: 90%;
+  }
+
+  .business-reasons__card:not(:first-child) {
+    margin-left: auto;
+    border-top: none;
+  }
+
+  .business-reasons__card:nth-of-type(even) {
+    margin-left: auto;
+  }
+
+  .business-reasons__card {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+
+  .business-reasons__container-image {
+    margin: 30px auto 20px;
+  }
+
+  .business-reasons__text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .business-demonstration__link-title {
+    display: none;
+  }
+
+  .business-contacts {
+    padding: 0 10px;
+  }
+
+  .business-contacts__title {
+    margin-bottom: 20px;
+  }
+
+  .business-contacts__description {
+    margin: 0 auto 30px;
+  }
+
+  .business-contacts__container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .business-contacts__item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .business-contacts__subtitle {
+    margin: 50px auto 15px;
+    margin-top: 20px;
+  }
+
+  .business-contacts__link {
+    display: block;
+  }
+
+  .business-subscribe {
+    padding: 20px 10px 25px;
+  }
+
+  .business-subscribe__title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .business__title-h3 {
+    font-size: 22px;
+  }
+
+  .business__button--small {
+    width: 250px;
+    height: 65px;
+  }
+
+  .business__button--big {
+    width: 270px;
+    height: 65px;
+  }
+
+  .business-intro__title {
+    font-size: 32px;
+  }
+
+  .business-subscribe__title {
+    font-size: 22px;
   }
 }
